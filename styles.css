@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* overflow-x: hidden; */
 }
 
 body {
@@ -17,8 +18,10 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 2px 20px;
-  background: #ff9800;
+  /* background: #ff9800; */
+  background: #ff4453;
   position: sticky;
+  /* width: 100%; */
   top: 0;
   z-index: 1000;
 }
@@ -120,7 +123,7 @@ body {
 }
 
 .banner-heading .highlight {
-  color: #ff9800;
+  color: #ff4453;
   text-decoration: underline;
   animation: pulse 2s infinite ease-in-out;
 }
@@ -136,7 +139,7 @@ body {
 .banner-content .btn {
   display: inline-block;
   padding: 15px 30px;
-  background: #ff9800;
+  background: #ff4453;
   color: #fff;
   text-decoration: none;
   font-size: 1.2rem;
@@ -164,11 +167,11 @@ body {
   0%,
   100% {
     transform: scale(1);
-    text-shadow: 0 0 10px #ff9800;
+    text-shadow: 0 0 10px #633bd1;
   }
   50% {
     transform: scale(1.1);
-    text-shadow: 0 0 20px #ff9800;
+    text-shadow: 0 0 20px #633bd1;
   }
 }
 
@@ -244,7 +247,7 @@ body {
 .product-info .btn {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #ff5722;
+  background-color: #ff4453;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -420,7 +423,7 @@ body {
 
 .contact-item i {
   font-size: 1.5rem;
-  color: #ff5722;
+  color: #ff4453;
 }
 
 .contact-item p {
@@ -429,7 +432,7 @@ body {
 }
 
 .contact-item a {
-  color: #ff5722;
+  color: #ff4453;
   text-decoration: none;
 }
 
@@ -459,12 +462,12 @@ body {
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border-color: #ff5722;
+  border-color: #ff4453;
   outline: none;
 }
 
 .contact-form button {
-  background-color: #ff5722;
+  background-color: #ff4453;
   color: white;
   padding: 15px 25px;
   border: none;
@@ -488,6 +491,88 @@ body {
 .contact-form:hover {
   transform: translateY(-10px);
   transition: transform 0.3s ease;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  padding: 50px 20px;
+  font-family: "Arial", sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #ff4453; /* Accent color */
+}
+
+.footer-section p,
+.footer-section ul {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #ff4453; /* Hover effect */
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-links li {
+  font-size: 1.5rem;
+}
+
+.social-links li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-links li a:hover {
+  color: #ff4453; /* Hover effect */
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #555;
+}
+
+.footer-bottom p {
+  font-size: 1rem;
+  margin: 0;
 }
 
 /* Responsive Design */
@@ -606,18 +691,20 @@ body {
   }
 
   .nav-links {
+    display: none;
     flex-direction: column;
     position: absolute;
-    top: 60px;
+    top: 50px;
     right: 0;
-    background: #ff9800;
+    background: #ff4453;
     width: 100%;
     transform: translateX(100%);
     text-align: center;
   }
 
   .nav-links.open {
-    transform: translateX(0); /* Show the menu when open */
+    display: flex;
+    transform: translateX(0); /*Show the menu when open*/
   }
 
   .nav-links li {
@@ -711,6 +798,32 @@ body {
 
   .contact-form button {
     font-size: 1rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .footer-section h3 {
+    font-size: 1.3rem;
+  }
+
+  .footer-section ul li a {
+    font-size: 0.9rem;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .footer-bottom p {
+    font-size: 0.9rem;
   }
 }
 
