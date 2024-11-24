@@ -82,7 +82,7 @@ body {
 
 /* Banner Section */
 .banner {
-  background: url("https://img.freepik.com/free-photo/top-view-french-macarons-with-waffles-crackers-cup-tea-pink-desk_140725-65892.jpg?semt=ais_hybrid")
+  background: url("https://imgs.search.brave.com/6RVznYLHNUHTjkQmDAkfnbtt0qJ85w5WXJQ6QGbS804/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTI3/ODMxOTQzMS9waG90/by95b3VuZy13b21h/bi1kaXdhbGktY2Vs/ZWJyYXRlLXN0b2Nr/LXBob3RvLmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz1hQmdZ/b3lYdXhBbWkwSGtH/ME5WS3FsSDd1cVNn/N25BMGltblNYTGlQ/a01nPQ")
     no-repeat center center/cover;
   height: 100vh; /* Full screen height */
   position: relative;
@@ -167,11 +167,11 @@ body {
   0%,
   100% {
     transform: scale(1);
-    text-shadow: 0 0 10px #633bd1;
+    text-shadow: 0 0 10px #323232;
   }
   50% {
     transform: scale(1.1);
-    text-shadow: 0 0 20px #633bd1;
+    text-shadow: 0 0 20px #323232;
   }
 }
 
