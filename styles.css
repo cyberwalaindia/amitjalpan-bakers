@@ -32,7 +32,7 @@ body {
 }
 
 .logo img {
-  height: 50px;
+  height: 60px;
   width: auto;
 }
 
@@ -82,9 +82,9 @@ body {
 
 /* Banner Section */
 .banner {
-  background: url("https://imgs.search.brave.com/6RVznYLHNUHTjkQmDAkfnbtt0qJ85w5WXJQ6QGbS804/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTI3/ODMxOTQzMS9waG90/by95b3VuZy13b21h/bi1kaXdhbGktY2Vs/ZWJyYXRlLXN0b2Nr/LXBob3RvLmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz1hQmdZ/b3lYdXhBbWkwSGtH/ME5WS3FsSDd1cVNn/N25BMGltblNYTGlQ/a01nPQ")
-    no-repeat center center/cover;
-  height: 100vh; /* Full screen height */
+  /* background: url("https://imgs.search.brave.com/6RVznYLHNUHTjkQmDAkfnbtt0qJ85w5WXJQ6QGbS804/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTI3/ODMxOTQzMS9waG90/by95b3VuZy13b21h/bi1kaXdhbGktY2Vs/ZWJyYXRlLXN0b2Nr/LXBob3RvLmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz1hQmdZ/b3lYdXhBbWkwSGtH/ME5WS3FsSDd1cVNn/N25BMGltblNYTGlQ/a01nPQ") */
+  background: url("images/home_banner.png") no-repeat center center/cover;
+  height: 95vh; /* Full screen height */
   position: relative;
   display: flex;
   align-items: center;
@@ -94,6 +94,18 @@ body {
   overflow: hidden;
 }
 
+.banner-boy {
+  position: absolute;
+  bottom: 0px;
+  left: -80px;
+}
+
+.banner-samosa {
+  position: absolute;
+  bottom: 60px;
+  right: -180px;
+}
+
 /* Dark Overlay */
 .banner-overlay {
   position: absolute;
@@ -101,7 +113,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0);
   z-index: 1;
 }
 
@@ -118,8 +130,9 @@ body {
 .banner-heading {
   font-size: 3rem;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   line-height: 1.2;
+  color: #fff;
 }
 
 .banner-heading .highlight {
@@ -130,6 +143,7 @@ body {
 
 /* Banner Text */
 .banner-text {
+  color: #fff;
   font-size: 1.5rem;
   margin-bottom: 30px;
   font-weight: lighter;
@@ -139,8 +153,8 @@ body {
 .banner-content .btn {
   display: inline-block;
   padding: 15px 30px;
-  background: #ff4453;
-  color: #fff;
+  background: #fff;
+  color: #ff4453;
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: bold;
@@ -149,7 +163,7 @@ body {
 }
 
 .banner-content .btn:hover {
-  background: #e64a19;
+  background: #f8f7f7;
   transform: scale(1.05);
 }
 
@@ -178,32 +192,33 @@ body {
 /* Product Section */
 .products {
   padding: 50px 20px;
-  background-color: #f9f9f9;
+  background-color: #f5d19d;
   text-align: center;
 }
 
 .products h1 {
   font-size: 2.5rem;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   color: #333;
 }
 
 .product-container {
   display: flex;
-  gap: 20px;
+  gap: 30px;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
 
 .product-card {
-  background: #fff;
-  border: 1px solid #ddd;
+  /* background: #fff; */
+  background-color: #f5d19d;
+  border: 1px solid #1f1f1f;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   text-align: left;
-  width: 300px;
+  width: 330px;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -230,7 +245,7 @@ body {
 
 .product-info p {
   font-size: 1rem;
-  color: #777;
+  color: #2a2a2a;
   margin-bottom: 10px;
 }
 
@@ -246,26 +261,27 @@ body {
 
 .product-info .btn {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 15px 20px;
   background-color: #ff4453;
   color: white;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 10px;
   font-weight: bold;
   transition: background-color 0.3s;
 }
 
 .product-info .btn:hover {
-  background-color: #e64a19;
+  background-color: #ff4454dd;
 }
 
 /* About Us Section */
 .about {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   padding: 50px 20px;
-  background-color: #f4f4f4;
+  background-color: #fff;
 }
 
 .about-content {
@@ -276,7 +292,7 @@ body {
 .about h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #333;
+  color: #ff4453;
   text-align: center;
 }
 
@@ -287,26 +303,29 @@ body {
   margin-bottom: 15px;
 }
 
+.about-amitjalpan {
+  color: #ff4453;
+  font-weight: bold;
+}
+
 .about-image {
   width: 40%;
 }
 
 .about-image img {
   width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Testimonial Section */
 .testimonials {
   padding: 50px 20px;
-  background-color: #f9f9f9;
+  background-color: #f5d19d47;
   text-align: center;
 }
 
 .testimonials h1 {
   font-size: 2.5rem;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   color: #333;
 }
 
@@ -319,7 +338,7 @@ body {
 }
 
 .testimonial-card {
-  background-color: #fff;
+  background-color: #f5d19d;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -351,6 +370,7 @@ body {
   width: 60px;
   height: 60px;
   object-fit: cover;
+  border: 1px solid #333;
   border-radius: 50%;
   margin-right: 15px;
 }
@@ -581,12 +601,26 @@ body {
     max-width: 600px;
   }
 
+  .banner-boy {
+    height: 550px;
+    position: absolute;
+    bottom: 0px;
+    left: 70px;
+  }
+
+  .banner-samosa {
+    height: 500px;
+    position: absolute;
+    bottom: 650px;
+    right: 100px;
+  }
+
   .banner-heading {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
   .banner-text {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 
   .banner-content .btn {
@@ -595,7 +629,7 @@ body {
   }
 
   .products h1 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .product-card img {
@@ -605,6 +639,8 @@ body {
   .about {
     flex-direction: column;
     text-align: center;
+    /* padding: 50px 30px; */
+    padding-bottom: 0px;
   }
 
   .about-content {
@@ -618,11 +654,11 @@ body {
   }
 
   .about h1 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .about p {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   .testimonials h1 {
@@ -720,6 +756,20 @@ body {
     max-width: 500px;
   }
 
+  .banner-boy {
+    height: 550px;
+    position: absolute;
+    bottom: 0px;
+    left: 70px;
+  }
+
+  .banner-samosa {
+    height: 500px;
+    position: absolute;
+    bottom: 650px;
+    right: 100px;
+  }
+
   .banner-heading {
     font-size: 2rem;
   }
@@ -731,6 +781,10 @@ body {
   .banner-content .btn {
     font-size: 0.9rem;
     padding: 8px 16px;
+  }
+
+  .products h1 {
+    font-size: 2.5rem;
   }
 
   .product-card img {
@@ -755,11 +809,11 @@ body {
   }
 
   .about h1 {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
   }
 
   .about p {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
   }
 
   .testimonials h1 {
@@ -829,7 +883,25 @@ body {
 
 @media (max-width: 480px) {
   .banner-heading {
-    font-size: 1.8rem;
+    font-size: 2rem;
+  }
+
+  .banner-text {
+    font-size: 1rem;
+  }
+
+  .banner-boy {
+    height: 350px;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+
+  .banner-samosa {
+    height: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -120%);
   }
 
   .banner-text {
@@ -839,5 +911,34 @@ body {
   .banner-content .btn {
     font-size: 0.8rem;
     padding: 8px 12px;
+  }
+
+  .products h1 {
+    font-size: 2rem;
+  }
+
+  .about {
+    padding-bottom: 0px;
+  }
+
+  .about h1 {
+    font-size: 2rem;
+  }
+
+  .about p {
+    font-size: 1rem;
+  }
+
+  .about-image {
+    width: 100%;
+  }
+
+  .about-image img {
+    width: 100%;
+  }
+
+  .testimonials h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
   }
 }
