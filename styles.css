@@ -1,3 +1,7 @@
+/* google fonts */
+/* @import url('https://fonts.googleapis.com/css2?family=Modak&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Itim&family=Modak&display=swap");
+
 /* General Reset */
 * {
   margin: 0;
@@ -6,22 +10,36 @@
   /* overflow-x: hidden; */
 }
 
+:root {
+  --main-heading-font: "Modak", serif;
+  --primary-font: "Itim", serif;
+
+  --brand-primary-color: #ff4453;
+  --brnad-primary-light-color: #ff4454a9;
+
+  --font-secondary-color: #2b2e5f;
+  /* --brand-secondary-color:  */
+  --white-color: #f8f9fa;
+  --black-color: ;
+}
+
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
+
+/* ############################################# Navbar ############################################## */
 
 /* Navbar Styling */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2px 20px;
-  /* background: #ff9800; */
+  padding: 2px 50px;
   background: #ff4453;
   position: sticky;
-  /* width: 100%; */
   top: 0;
   z-index: 1000;
 }
@@ -56,7 +74,8 @@ body {
 .nav-links a {
   color: #fff;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  font-family: var(--primary-font);
   transition: transform 0.8s ease-in;
   padding: 5px 10px;
   border-radius: 5px;
@@ -84,6 +103,7 @@ body {
   border-radius: 3px;
 }
 
+/*#################################################### home page ############################################################## */
 /* Banner Section */
 .banner {
   /* background: url("https://imgs.search.brave.com/6RVznYLHNUHTjkQmDAkfnbtt0qJ85w5WXJQ6QGbS804/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTI3/ODMxOTQzMS9waG90/by95b3VuZy13b21h/bi1kaXdhbGktY2Vs/ZWJyYXRlLXN0b2Nr/LXBob3RvLmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz1hQmdZ/b3lYdXhBbWkwSGtH/ME5WS3FsSDd1cVNn/N25BMGltblNYTGlQ/a01nPQ") */
@@ -125,44 +145,46 @@ body {
 .banner-content {
   position: relative;
   z-index: 2;
-  max-width: 800px;
   padding: 20px;
   animation: fadeIn 2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  overflow-x: hidden;
 }
 
 /* Heading Styling */
 .banner-heading {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-  line-height: 1.2;
-  color: #fff;
-}
-
-.banner-heading .highlight {
-  color: #ff4453;
-  text-decoration: underline;
-  animation: pulse 2s infinite ease-in-out;
+  font-size: 6rem;
+  font-weight: 100;
+  font-family: var(--main-heading-font);
+  line-height: 3rem;
+  color: var(--white-color);
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  /* background-color: green; */
 }
 
 /* Banner Text */
 .banner-text {
-  color: #fff;
-  font-size: 1.5rem;
-  margin-bottom: 30px;
-  font-weight: lighter;
+  color: var(--white-color);
+  font-size: 1.8rem;
+  font-family: var(--primary-font);
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Button Styling */
 .banner-content .btn {
   display: inline-block;
-  padding: 15px 30px;
+  padding: 10px 20px;
   background: #fff;
   color: #ff4453;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: bold;
-  border-radius: 5px;
+  font-family: var(--primary-font);
+  border-radius: 10px;
   transition: background 0.3s, transform 0.2s;
 }
 
@@ -193,21 +215,70 @@ body {
   }
 }
 
+/*################################################### product section #################################################### */
+
 /* Product Section */
-.products {
-  padding: 50px 20px;
+.section-products {
   background-color: #f5d19d47;
   text-align: center;
 }
 
-.products h1 {
-  font-size: 2.5rem;
+.section-products h1 {
+  font-size: 3rem;
+  font-weight: 100;
+  font-family: var(--main-heading-font);
+  padding-top: 40px;
+  color: var(--brand-primary-color);
+}
+
+.section-products .products-section-banner {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.laddu-page {
+  /* background: linear-gradient(to right, #ff6c22, #ffa847) !important; */
+  background-image: url("https://img.freepik.com/free-vector/2022-happy-new-year-yellow-decorative-banner_1017-35386.jpg?ga=GA1.1.1784432723.1734954497&semt=ais_hybrid");
+}
+
+.burfi-page {
+  /* background: linear-gradient(to right, #ff6c22, #ffa847) !important; */
+  background-image: url("https://img.freepik.com/free-vector/2022-happy-new-year-yellow-decorative-banner_1017-35386.jpg?ga=GA1.1.1784432723.1734954497&semt=ais_hybrid");
+}
+
+.other-sweets-page {
+  /* background: linear-gradient(to right, #ff6c22, #ffa847) !important; */
+  background-image: url("https://img.freepik.com/free-vector/2022-happy-new-year-yellow-decorative-banner_1017-35386.jpg?ga=GA1.1.1784432723.1734954497&semt=ais_hybrid");
+}
+
+.snacks-page {
+  /* background: linear-gradient(to right, #ff6c22, #ffa847) !important; */
+  background-image: url("https://img.freepik.com/free-vector/2022-happy-new-year-yellow-decorative-banner_1017-35386.jpg?ga=GA1.1.1784432723.1734954497&semt=ais_hybrid");
+}
+
+.cake-page {
+  /* background: linear-gradient(to right, #ff6c22, #ffa847) !important; */
+  background-image: url("https://img.freepik.com/free-vector/2022-happy-new-year-yellow-decorative-banner_1017-35386.jpg?ga=GA1.1.1784432723.1734954497&semt=ais_hybrid");
+}
+
+.products-section-banner h1 {
+  font-size: 6.5rem;
+  font-weight: 100;
+  font-family: var(--main-heading-font);
+  text-shadow: 2px 2px 10px var(--brand-primary-color);
   margin-bottom: 30px;
-  color: #333;
+  color: var(--white-color);
 }
 
 .product-container,
 .product-variety-container {
+  padding: 50px;
   display: flex;
   gap: 30px;
   justify-content: center;
@@ -216,14 +287,13 @@ body {
 }
 
 .product-card {
-  /* background: #fff; */
   background-color: #f5d19d;
   border: 1px solid #1f1f1f;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   text-align: left;
-  width: 330px;
+  width: 350px;
   transition: transform 0.3s, box-shadow 0.3s;
   justify-self: flex-start;
   align-self: flex-start;
@@ -242,17 +312,18 @@ body {
 
 .product-info {
   padding: 20px;
+  font-family: var(--primary-font);
 }
 
 .product-info h3 {
-  font-size: 1.5rem;
-  color: #333;
-  margin-bottom: 10px;
+  font-size: 2rem;
+  color: var(--brand-primary-color);
 }
 
 .product-info p {
-  font-size: 1rem;
-  color: #2a2a2a;
+  font-size: 1.1rem;
+  line-height: 25px;
+  color: var(--font-secondary-color);
   margin-bottom: 10px;
 }
 
@@ -262,13 +333,15 @@ body {
   justify-content: space-between;
   font-size: 1rem;
   font-weight: bold;
-  color: #1a0701cd;
+  color: var(--brand-primary-color);
   margin-bottom: 20px;
 }
 
 .product-info .btn {
   display: inline-block;
-  padding: 15px 20px;
+  font-family: var(--primary-font);
+  font-size: 1.3rem;
+  padding: 10px 20px;
   background-color: #ff4453;
   color: white;
   text-decoration: none;
@@ -282,16 +355,16 @@ body {
 }
 
 .product-variety-container {
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 
 .product-veriety-card {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   gap: 10px;
   width: 350px;
-  height: 150px;
+  height: 120px;
   padding-right: 20px;
   border-radius: 20px;
   background-color: #ff4453;
@@ -301,9 +374,6 @@ body {
   display: block;
   width: 50%;
   height: 100%;
-  /* border-left: 5px solid #ff4453;
-    border-top: 5px solid #ff4453;
-    border-bottom: 5px solid #ff4453; */
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
@@ -313,21 +383,23 @@ body {
 }
 
 .product-variety-content h3 {
-  color: #fff;
+  color: var(--white-color);
   font-weight: bold;
   font-size: 1.5rem;
-  margin-bottom: 10px;
+  font-family: var(--primary-font);
+  /* margin-bottom: 10px; */
 }
 
 .product-variety-content .btn {
   display: inline-block;
-  padding: 10px;
+  padding: 10px 15px;
   background-color: #fff;
   color: #ff4453;
   text-decoration: none;
   border-radius: 10px;
   font-weight: bold;
   font-size: 15px;
+  font-family: var(--primary-font);
   transition: background-color 0.3s;
 }
 
@@ -335,13 +407,14 @@ body {
   background-color: #ebe2e3;
 }
 
+/*############################################### About Page ################################################ */
 /* About Us Section */
 .about {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding: 50px 20px;
+  padding: 50px;
   background-color: #fff;
 }
 
@@ -351,7 +424,9 @@ body {
 }
 
 .about h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  font-family: var(--main-heading-font);
+  font-weight: 100;
   margin-bottom: 20px;
   color: #ff4453;
   text-align: center;
@@ -359,8 +434,9 @@ body {
 
 .about p {
   font-size: 1.2rem;
-  line-height: 1.6;
-  color: #555;
+  font-family: var(--primary-font);
+  line-height: 1.4rem;
+  color: var(--font-secondary-color);
   margin-bottom: 15px;
 }
 
@@ -377,17 +453,19 @@ body {
   width: 100%;
 }
 
-/* Testimonial Section */
+/*############################################### Testimonial Section ######################################### */
 .testimonials {
-  padding: 50px 20px;
+  padding: 50px;
   background-color: #f5d19d47;
   text-align: center;
 }
 
 .testimonials h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  font-family: var(--main-heading-font);
+  font-weight: 100;
   margin-bottom: 20px;
-  color: #333;
+  color: var(--brand-primary-color);
 }
 
 .testimonial-container {
@@ -415,8 +493,10 @@ body {
 
 .testimonial-text p {
   font-size: 1.2rem;
+  font-family: var(--primary-font);
+  line-height: 1.5rem;
   font-style: italic;
-  color: #555;
+  color: var(--font-secondary-color);
   margin-bottom: 15px;
 }
 
@@ -428,8 +508,8 @@ body {
 }
 
 .testimonial-info img {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   object-fit: cover;
   border: 1px solid #333;
   border-radius: 50%;
@@ -437,155 +517,23 @@ body {
 }
 
 .testimonial-info h3 {
-  font-size: 1.2rem;
-  color: #333;
+  font-size: 1.3rem;
+  font-family: var(--primary-font);
+  color: var(--brand-primary-color);
   margin-bottom: 5px;
 }
 
-.testimonial-info p {
-  font-size: 1rem;
-  color: #777;
-}
-
-/* Contact Us Section */
-.contact {
-  background-color: #f5f5f5;
-  padding: 50px 20px;
-  /* background-image: url("images/contact-background.jpg");
-  background-size: cover;
-  background-position: center; */
-  background-color: #f5d19d47;
-  color: white;
-  position: relative;
-}
-
-.contact-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 40px;
-}
-
-.contact-info,
-.contact-form {
-  flex: 1;
-  min-width: 300px;
-  border-radius: 10px;
-  padding: 40px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-  background-color: #ff4453;
-}
-
-.contact-info h2,
-.contact-form h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.contact-info p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-.contact-details {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  text-align: center;
-}
-
-.contact-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-.contact-item i {
-  font-size: 1.5rem;
-  color: #ff4453;
-}
-
-.contact-item p {
-  font-size: 1.1rem;
-  color: #fff;
-}
-
-.contact-item a {
-  color: #ff4453;
-  text-decoration: none;
-}
-
-.contact-form .form-group {
-  margin-bottom: 20px;
-}
-
-.contact-form label {
-  font-size: 1rem;
-  display: block; /* Make labels block elements so they take full width */
-  margin-bottom: 5px;
-  text-align: left;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 15px;
-  border-radius: 5px;
-  border: 1px solid #ddd;
-  font-size: 1rem;
-  margin-top: 5px;
-  background: #fff;
-  color: #333;
-  transition: border-color 0.3s;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  border-color: #ff4453;
-  outline: none;
-}
-
-.contact-form button {
-  background-color: #ff4453;
-  color: white;
-  padding: 15px 25px;
-  border: none;
-  border-radius: 5px;
-  font-size: 1.2rem;
-  cursor: pointer;
-  width: 100%;
-  transition: background-color 0.3s ease;
-}
-
-.contact-form button:hover {
-  background-color: #e64a19;
-}
-
-/* Hover Effects */
-.contact-info:hover {
-  transform: translateY(-10px);
-  transition: transform 0.3s ease;
-}
-
-.contact-form:hover {
-  transform: translateY(-10px);
-  transition: transform 0.3s ease;
-}
-
-/* Footer Styling */
+/*#################################################### Footer Section #####################################################*/
 .footer {
   background-color: #000; /* Black background */
-  color: #fff; /* White text */
-  padding: 50px 20px;
-  font-family: "Arial", sans-serif;
+  color: var(--white-color); /* White text */
+  padding: 50px;
 }
 
 .footer-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   gap: 40px;
 }
@@ -593,18 +541,22 @@ body {
 .footer-section {
   flex: 1;
   min-width: 200px;
+  text-align: center;
 }
 
 .footer-section h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-family: var(--primary-font);
+  font-weight: bold;
   margin-bottom: 20px;
   color: #ff4453; /* Accent color */
 }
 
 .footer-section p,
 .footer-section ul {
-  font-size: 1rem;
-  line-height: 1.5;
+  font-size: 1.3rem;
+  font-family: var(--primary-font);
+  line-height: 1.5rem;
 }
 
 .footer-section ul {
@@ -617,9 +569,9 @@ body {
 }
 
 .footer-section ul li a {
-  color: #fff;
+  color: var(--white-color);
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.2rem;
   transition: color 0.3s ease;
 }
 
@@ -654,13 +606,16 @@ body {
 
 .footer-bottom p {
   font-size: 1rem;
+  font-family: var(--primary-font);
+  color: var(--brand-primary-color);
   margin: 0;
 }
 
 /* Responsive Design */
 @media (max-width: 1024px) {
+  /*############################################## home page ################################################ */
   .banner-content {
-    max-width: 600px;
+    gap: 10px;
   }
 
   .banner-boy {
@@ -674,24 +629,28 @@ body {
     height: 500px;
     position: absolute;
     bottom: 650px;
-    right: 100px;
+    right: 20%;
   }
 
   .banner-heading {
-    font-size: 3rem;
+    font-size: 4.5rem;
   }
 
   .banner-text {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
   }
 
   .banner-content .btn {
-    font-size: 1rem;
+    font-size: 1.4rem;
     padding: 10px 20px;
   }
 
-  .products h1 {
-    font-size: 3rem;
+  .section-products .products-section-banner {
+    height: 300px;
+  }
+
+  .section-products h1 {
+    font-size: 4.5rem;
   }
 
   .product-card img {
@@ -780,6 +739,7 @@ body {
 
 /* Mobile Responsive Styling */
 @media (max-width: 768px) {
+  /*######################################################### Navigation bar ############################################################# */
   .brand-name {
     display: none; /* Hide the brand name on smaller screens */
   }
@@ -792,7 +752,7 @@ body {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 50px;
+    top: 55px;
     right: 0;
     background: #ff4453;
     width: 100%;
@@ -813,9 +773,10 @@ body {
     font-size: 1.2rem;
   }
 
+  /*############################################### home page ################################################ */
   .banner-content {
     padding: 10px;
-    max-width: 500px;
+    gap: 15px;
   }
 
   .banner-boy {
@@ -828,21 +789,23 @@ body {
   .banner-samosa {
     height: 500px;
     position: absolute;
-    bottom: 650px;
+    bottom: 500px;
     right: 100px;
   }
 
   .banner-heading {
-    font-size: 2rem;
+    font-size: 6rem;
+    line-height: 5rem;
   }
 
   .banner-text {
-    font-size: 1rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .banner-content .btn {
-    font-size: 0.9rem;
-    padding: 8px 16px;
+    font-size: 1.5rem;
+    padding: 10px 20px;
   }
 
   .products h1 {
@@ -944,14 +907,12 @@ body {
 }
 
 @media (max-width: 480px) {
-  .banner-heading {
-    font-size: 2rem;
+  /*############################################### Navbar Styling ###########################################*/
+  .navbar {
+    padding: 2px 20px;
   }
 
-  .banner-text {
-    font-size: 1rem;
-  }
-
+  /*############################################### home page ################################################ */
   .banner-boy {
     height: 350px;
     bottom: 0px;
@@ -961,30 +922,145 @@ body {
 
   .banner-samosa {
     height: 350px;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -120%);
   }
 
+  .banner-content {
+    gap: 10px;
+  }
+
+  .banner-heading {
+    font-size: 3.5rem;
+    line-height: 3rem;
+  }
+
   .banner-text {
-    font-size: 0.9rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .banner-content .btn {
-    font-size: 0.8rem;
-    padding: 8px 12px;
+    font-size: 1rem;
+    padding: 8px 15px;
   }
 
-  .products h1 {
+  /*################################################### product section #################################################### */
+
+  /* Product Section */
+  .section-products {
+  }
+
+  .section-products h1 {
     font-size: 2rem;
   }
 
+  .section-products .products-section-banner {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .laddu-page {
+    /* background: linear-gradient(to right, #ff6c22, #ffa847) !important; */
+    background-image: url("https://img.freepik.com/free-vector/2025-new-year-celebration-holiday-card-background_1035-29525.jpg?ga=GA1.1.1784432723.1734954497&semt=ais_hybrid");
+  }
+
+  .burfi-page {
+    /* background: linear-gradient(to right, #ff6c22, #ffa847) !important; */
+    background-image: url("https://img.freepik.com/free-vector/2025-new-year-celebration-holiday-card-background_1035-29525.jpg?ga=GA1.1.1784432723.1734954497&semt=ais_hybrid");
+  }
+
+  .other-sweets-page {
+    /* background: linear-gradient(to right, #ff6c22, #ffa847) !important; */
+    background-image: url("https://img.freepik.com/free-vector/2025-new-year-celebration-holiday-card-background_1035-29525.jpg?ga=GA1.1.1784432723.1734954497&semt=ais_hybrid");
+  }
+
+  .snacks-page {
+    /* background: linear-gradient(to right, #ff6c22, #ffa847) !important; */
+    background-image: url("https://img.freepik.com/free-vector/2025-new-year-celebration-holiday-card-background_1035-29525.jpg?ga=GA1.1.1784432723.1734954497&semt=ais_hybrid");
+  }
+
+  .cake-page {
+    /* background: linear-gradient(to right, #ff6c22, #ffa847) !important; */
+    background-image: url("https://img.freepik.com/free-vector/2025-new-year-celebration-holiday-card-background_1035-29525.jpg?ga=GA1.1.1784432723.1734954497&semt=ais_hybrid");
+  }
+
+  .products-section-banner h1 {
+    font-size: 6.5rem;
+    font-weight: 100;
+    font-family: var(--main-heading-font);
+    margin-bottom: 30px;
+    color: var(--white-color);
+  }
+
+  .product-container,
+  .product-variety-container {
+    padding: 50px 20px;
+  }
+
+  .product-card {
+    width: 300px;
+  }
+
+  .product-info h3 {
+    font-size: 1.5rem;
+  }
+
+  .product-info p {
+    font-size: 0.8rem;
+    line-height: 18px;
+  }
+
+  .price {
+    margin-bottom: 0px;
+  }
+
+  .product-info .btn {
+    font-size: 1rem;
+    padding: 8px 15px;
+  }
+
+  .product-veriety-card {
+    width: 300px;
+    height: 100px;
+  }
+
+  .product-variety-content {
+    padding-right: 10px;
+  }
+
+  .product-variety-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .product-variety-content .btn {
+    padding: 5px 10px;
+    font-size: 1rem;
+  }
+
+  .product-variety-content .btn:hover {
+    background-color: #ebe2e3;
+  }
+
+  /*############################################### About Page ################################################ */
+  /* About Us Section */
   .about {
-    padding-bottom: 0px;
+    padding: 50px 20px;
+  }
+
+  .about-content {
+    width: 100%;
+    padding-right: 0px;
   }
 
   .about h1 {
     font-size: 2rem;
+    margin-bottom: 10px;
   }
 
   .about p {
@@ -999,8 +1075,89 @@ body {
     width: 100%;
   }
 
+  /*############################################### Testimonial Section ######################################### */
+  .testimonials {
+    padding: 50px 20px;
+  }
+
   .testimonials h1 {
     font-size: 2rem;
-    margin-bottom: 20px;
+  }
+
+  /*#################################################### Footer Section #####################################################*/
+  .footer {
+    padding: 50px 20px;
+  }
+
+  .footer-container {
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .footer-section {
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .footer-section h3 {
+    font-size: 1.5rem;
+  }
+
+  .footer-section p,
+  .footer-section ul {
+    font-size: 1rem;
+  }
+
+  .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+
+  .footer-section ul li a {
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+
+  .footer-section ul li a:hover {
+    color: #ff4453; /* Hover effect */
+  }
+
+  .social-links {
+    display: flex;
+    gap: 15px;
+  }
+
+  .social-links li {
+    font-size: 1.5rem;
+  }
+
+  .social-links li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .social-links li a:hover {
+    color: #ff4453; /* Hover effect */
+  }
+
+  .footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #555;
+  }
+
+  .footer-bottom p {
+    font-size: 1rem;
+    font-family: var(--primary-font);
+    color: var(--brand-primary-color);
+    margin: 0;
   }
 }
