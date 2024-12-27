@@ -108,12 +108,12 @@ body {
 .banner {
   /* background: url("https://imgs.search.brave.com/6RVznYLHNUHTjkQmDAkfnbtt0qJ85w5WXJQ6QGbS804/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTI3/ODMxOTQzMS9waG90/by95b3VuZy13b21h/bi1kaXdhbGktY2Vs/ZWJyYXRlLXN0b2Nr/LXBob3RvLmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz1hQmdZ/b3lYdXhBbWkwSGtH/ME5WS3FsSDd1cVNn/N25BMGltblNYTGlQ/a01nPQ") */
   background: url("images/home_banner.png") no-repeat center center/cover;
-  height: 95vh; /* Full screen height */
+  height: 100vh; /* Full screen height */
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: var(--white-color);
   text-align: center;
   overflow: hidden;
 }
@@ -227,7 +227,7 @@ body {
   font-size: 3rem;
   font-weight: 100;
   font-family: var(--main-heading-font);
-  padding-top: 40px;
+  padding: 40px 0px 20px 0px;
   color: var(--brand-primary-color);
 }
 
@@ -244,7 +244,7 @@ body {
 
 .laddu-page {
   /* background: linear-gradient(to right, #ff6c22, #ffa847) !important; */
-  background-image: url("https://img.freepik.com/free-vector/2022-happy-new-year-yellow-decorative-banner_1017-35386.jpg?ga=GA1.1.1784432723.1734954497&semt=ais_hybrid");
+  background-image: url("/images/bannerladdu.jpeg");
 }
 
 .burfi-page {
@@ -278,7 +278,7 @@ body {
 
 .product-container,
 .product-variety-container {
-  padding: 50px;
+  padding: 0px 50px 30px 50px;
   display: flex;
   gap: 30px;
   justify-content: center;
@@ -455,7 +455,7 @@ body {
 
 /*############################################### Testimonial Section ######################################### */
 .testimonials {
-  padding: 50px;
+  padding: 40px 50px;
   background-color: #f5d19d47;
   text-align: center;
 }
@@ -910,6 +910,8 @@ body {
   /*############################################### Navbar Styling ###########################################*/
   .navbar {
     padding: 2px 20px;
+    position: fixed;
+    width: 100%;
   }
 
   /*############################################### home page ################################################ */
@@ -1000,7 +1002,7 @@ body {
 
   .product-container,
   .product-variety-container {
-    padding: 50px 20px;
+    padding: 20px;
   }
 
   .product-card {
