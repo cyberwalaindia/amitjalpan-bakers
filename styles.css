@@ -239,6 +239,7 @@ body {
   align-items: center;
   margin-bottom: 50px;
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }
 
@@ -249,7 +250,7 @@ body {
 
 .burfi-page {
   /* background: linear-gradient(to right, #ff6c22, #ffa847) !important; */
-  background-image: url("https://img.freepik.com/free-vector/2022-happy-new-year-yellow-decorative-banner_1017-35386.jpg?ga=GA1.1.1784432723.1734954497&semt=ais_hybrid");
+  background-image: url("/images/burfi_banner.jpeg");
 }
 
 .other-sweets-page {
@@ -259,12 +260,12 @@ body {
 
 .snacks-page {
   /* background: linear-gradient(to right, #ff6c22, #ffa847) !important; */
-  background-image: url("https://img.freepik.com/free-vector/2022-happy-new-year-yellow-decorative-banner_1017-35386.jpg?ga=GA1.1.1784432723.1734954497&semt=ais_hybrid");
+  background-image: url("/images/snacks_banner.jpeg");
 }
 
 .cake-page {
   /* background: linear-gradient(to right, #ff6c22, #ffa847) !important; */
-  background-image: url("https://img.freepik.com/free-vector/2022-happy-new-year-yellow-decorative-banner_1017-35386.jpg?ga=GA1.1.1784432723.1734954497&semt=ais_hybrid");
+  background-image: url("/images/cake_banner.jpeg");
 }
 
 .products-section-banner h1 {
@@ -334,7 +335,7 @@ body {
   font-size: 1rem;
   font-weight: bold;
   color: var(--brand-primary-color);
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .product-info .btn {
@@ -964,32 +965,32 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin: 50px 0px 20px 0px;
   }
 
   .laddu-page {
     /* background: linear-gradient(to right, #ff6c22, #ffa847) !important; */
-    background-image: url("https://img.freepik.com/free-vector/2025-new-year-celebration-holiday-card-background_1035-29525.jpg?ga=GA1.1.1784432723.1734954497&semt=ais_hybrid");
+    background-image: url("/images/square_banner_laddu.jpeg");
   }
 
   .burfi-page {
     /* background: linear-gradient(to right, #ff6c22, #ffa847) !important; */
-    background-image: url("https://img.freepik.com/free-vector/2025-new-year-celebration-holiday-card-background_1035-29525.jpg?ga=GA1.1.1784432723.1734954497&semt=ais_hybrid");
+    background-image: url("/images/square_banner_barfi.jpeg");
   }
 
   .other-sweets-page {
     /* background: linear-gradient(to right, #ff6c22, #ffa847) !important; */
-    background-image: url("https://img.freepik.com/free-vector/2025-new-year-celebration-holiday-card-background_1035-29525.jpg?ga=GA1.1.1784432723.1734954497&semt=ais_hybrid");
+    background-image: url("/images/square_banner_snacks.jpeg");
   }
 
   .snacks-page {
     /* background: linear-gradient(to right, #ff6c22, #ffa847) !important; */
-    background-image: url("https://img.freepik.com/free-vector/2025-new-year-celebration-holiday-card-background_1035-29525.jpg?ga=GA1.1.1784432723.1734954497&semt=ais_hybrid");
+    background-image: url("/images/square_banner_snacks.jpeg");
   }
 
   .cake-page {
     /* background: linear-gradient(to right, #ff6c22, #ffa847) !important; */
-    background-image: url("https://img.freepik.com/free-vector/2025-new-year-celebration-holiday-card-background_1035-29525.jpg?ga=GA1.1.1784432723.1734954497&semt=ais_hybrid");
+    background-image: url("/images/square_banner_cake.jpeg");
   }
 
   .products-section-banner h1 {
@@ -1002,7 +1003,7 @@ body {
 
   .product-container,
   .product-variety-container {
-    padding: 20px;
+    padding: 0px 20px;
   }
 
   .product-card {
