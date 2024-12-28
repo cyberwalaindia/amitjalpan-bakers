@@ -562,7 +562,7 @@ body {
 .contact-info {
   width: 50%;
   height: 600px;
-  background-image: url("https://files.oaiusercontent.com/file-A6hAgaSnABGUBZNZfAtbYw?se=2024-12-28T09%3A28%3A42Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D5fb058bf-22a3-4475-b524-8f7a1630bad7.webp&sig=MGJJhiyF9Li%2B6xm6qsFNatnWP4rfo6/anwxtQ4bWpEg%3D");
+  background-image: url("/images/contact_us.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
