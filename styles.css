@@ -255,7 +255,7 @@ body {
 
 .other-sweets-page {
   /* background: linear-gradient(to right, #ff6c22, #ffa847) !important; */
-  background-image: url("https://img.freepik.com/free-vector/2022-happy-new-year-yellow-decorative-banner_1017-35386.jpg?ga=GA1.1.1784432723.1734954497&semt=ais_hybrid");
+  background-image: url("/images/banner_othersweets.jpeg");
 }
 
 .snacks-page {
@@ -524,6 +524,50 @@ body {
   margin-bottom: 5px;
 }
 
+/*#################################################### Contact Us ####################################################*/
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 0px 0px 0px;
+  background-color: #f5d19d47;
+}
+
+.contact-section h1 {
+  font-size: 3rem;
+  font-family: var(--main-heading-font);
+  font-weight: 100;
+  margin-bottom: 20px;
+  color: var(--brand-primary-color);
+}
+
+.contact-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact-section .map {
+  width: 50%;
+}
+.map iframe {
+  width: 100%;
+  height: 600px;
+  border: 0px;
+}
+
+.contact-info {
+  width: 50%;
+  height: 600px;
+  background-image: url("https://files.oaiusercontent.com/file-A6hAgaSnABGUBZNZfAtbYw?se=2024-12-28T09%3A28%3A42Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D5fb058bf-22a3-4475-b524-8f7a1630bad7.webp&sig=MGJJhiyF9Li%2B6xm6qsFNatnWP4rfo6/anwxtQ4bWpEg%3D");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 /*#################################################### Footer Section #####################################################*/
 .footer {
   background-color: #000; /* Black background */
@@ -698,43 +742,31 @@ body {
   .testimonial-info h3 {
     font-size: 1.2rem;
   }
-
-  .contact-container {
-    flex-direction: column;
-    text-align: center;
+  /*#################################################### Contact Us ####################################################*/
+  .contact-section {
+    padding: 0px 0px 0px 0px;
   }
 
-  .contact-info,
-  .contact-form {
-    min-width: 100%;
-    margin-bottom: 30px;
+  .contact-section h1 {
+    font-size: 3rem;
   }
 
-  .contact-info h2,
-  .contact-form h2 {
-    font-size: 1.8rem;
+  .contact-content {
+    flex-wrap: nowrap;
   }
 
-  .contact-item {
-    flex-direction: column;
-    align-items: center;
+  .contact-section .map {
+    width: 50%;
+  }
+  .map iframe {
+    width: 100%;
+    height: 350px;
   }
 
-  .contact-item i {
-    font-size: 2rem;
-  }
-
-  .contact-item p {
-    font-size: 1rem;
-  }
-
-  .contact-form input,
-  .contact-form textarea {
-    font-size: 1rem;
-  }
-
-  .contact-form button {
-    font-size: 1.1rem;
+  .contact-info {
+    width: 50%;
+    height: 350px;
+    margin-bottom: 0px;
   }
 }
 
@@ -980,7 +1012,7 @@ body {
 
   .other-sweets-page {
     /* background: linear-gradient(to right, #ff6c22, #ffa847) !important; */
-    background-image: url("/images/square_banner_snacks.jpeg");
+    background-image: url("/images/square_banner_othersweets.jpeg");
   }
 
   .snacks-page {
@@ -995,6 +1027,7 @@ body {
 
   .products-section-banner h1 {
     font-size: 6.5rem;
+    line-height: 5rem;
     font-weight: 100;
     font-family: var(--main-heading-font);
     margin-bottom: 30px;
@@ -1080,11 +1113,38 @@ body {
 
   /*############################################### Testimonial Section ######################################### */
   .testimonials {
-    padding: 50px 20px;
+    padding: 50px 20px 0px 20px;
   }
 
   .testimonials h1 {
     font-size: 2rem;
+  }
+
+  /*#################################################### Contact Us ####################################################*/
+  .contact-section {
+    padding: 50px 0px 0px 0px;
+  }
+
+  .contact-section h1 {
+    font-size: 2rem;
+  }
+
+  .contact-content {
+    flex-wrap: wrap-reverse;
+  }
+
+  .contact-section .map {
+    width: 100%;
+  }
+  .map iframe {
+    width: 100%;
+    height: 100vw;
+  }
+
+  .contact-info {
+    width: 100%;
+    height: 100vw;
+    margin-bottom: 0px;
   }
 
   /*#################################################### Footer Section #####################################################*/
